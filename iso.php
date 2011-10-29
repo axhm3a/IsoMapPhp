@@ -23,10 +23,10 @@
 	$zackig = 2;
 	$mapX =512;
 	$mapY =512;
-	
+	$path = "WORK/";
 	$im = imagecreatetruecolor ($width, $height);
-	$heightmapim = imagecreatefrompng("c:\\dev\\heightmap2.png");
-	$objmapim = imagecreatefrompng("c:\\dev\\objmap.png");
+	$heightmapim = imagecreatefrompng($path . "heightmap2.png");
+	$objmapim = imagecreatefrompng($path . "objmap.png");
 	
 	for($x = 0; $x < $mapX; $x++){
 		for($y = 0; $y < $mapY; $y++){
@@ -45,14 +45,14 @@
 	imagealphablending( $im, true );
 
 	$background_color = ImageColorAllocate ($im, 0, 0, 0);
-	$tile[0] = imagecreatefrompng ( "c:\\dev\\000.png" );
-	$tile[1] = imagecreatefrompng ( "c:\\dev\\001.png" );
-	$tile[10] = imagecreatefrompng ( "c:\\dev\\010.png" );
-	$tile[11] = imagecreatefrompng ( "c:\\dev\\011.png" );
-	$tile[12] = imagecreatefrompng ( "c:\\dev\\012.png" );
-	$tile[13] = imagecreatefrompng ( "c:\\dev\\013.png" );
-	$object[10] = imagecreatefrompng( "c:\\dev\\obj1.png");
-	$object[50] = imagecreatefrompng( "c:\\dev\\obj2.png");
+	$tile[0] = imagecreatefrompng ( $path . "000.png" );
+	$tile[1] = imagecreatefrompng ( $path . "001.png" );
+	$tile[10] = imagecreatefrompng ( $path . "010.png" );
+	$tile[11] = imagecreatefrompng ( $path . "011.png" );
+	$tile[12] = imagecreatefrompng ( $path . "012.png" );
+	$tile[13] = imagecreatefrompng ( $path . "013.png" );
+	$object[10] = imagecreatefrompng( $path . "obj1.png");
+	$object[50] = imagecreatefrompng( $path . "obj2.png");
 		
 	for ($y = 0; $y < $tilesY; $y++){
 		$renX = ($width / 2) - $tileWidth;
