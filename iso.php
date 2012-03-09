@@ -8,8 +8,8 @@
 	}
 	else
 	{
-		$offx = 0;
-		$offy = 0;
+		$offx = 1;
+		$offy = 1;
 	}
 	
 	$tilesX = 50;  //16
@@ -30,7 +30,7 @@
 	
 	for($x = 0; $x < $mapX; $x++){
 		for($y = 0; $y < $mapY; $y++){
-			$rgb = imagecolorat($heightmapim, $x, $y);
+ 			$rgb = imagecolorat($heightmapim, $x, $y);
 			$map[$x][$y] = $rgb & 0xFF;
 		}
 	}
