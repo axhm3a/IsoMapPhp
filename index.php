@@ -33,7 +33,7 @@
 <table align="center" border="0" cellpadding="0" cellspacing="0">
 <tr><td><a href="index.php?x=<?php echo $x - $jump;?>&y=<?php echo $y;?>"><img src="blue.png" width="50" height="50"></a></td><td><img src="black.png" width="800" height="50"></td><td><a href="index.php?x=<?php echo $x;?>&y=<?php echo $y - $jump;?>"><img src="yellow.png" width="50" height="50"></a></td>
 <tr><td><img src="black.png" width="50" height="400"></td><td><a href="index.php"><img src="iso.php?x=<?php echo $x;?>&y=<?php echo $y;?>" height="400" width="800"></a></td><td><img src="black.png" width="50" height="400"></td>
-<tr><td><a href="index.php?x=<?php echo $x;?>&y=<?php echo $y + $jump;?>"><img src="green.png" width="50" height="50"></a></td><td><img src="black.png" width="800" height="50"></td><td><a href="index.php?x=<?php echo $x + $jump; ?>&y=<?php echo $y; ?>"><img src="red.png" width="50" height="50"></a></a></td>
+<tr><td><a href="index.php?x=<?php echo $x;?>&y=<?php echo $y + $jump;?>"><img src="green.png" width="50" height="50"></a></td><td><img src="black.png" width="800" height="50"></td><td><a href="index.php?x=<?php echo $x + $jump; ?>&y=<?php echo $y; ?>"><img src="red.png" width="50" height="50"></a></td>
 </table>
 </form>
 <p align="center"><font color="#FFFFFF">&copy; 2010 - 2012 Daniel Basten</font></p>
