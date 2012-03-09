@@ -21,7 +21,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <!-- <meta name="viewport" content="width=240, initial-scale=1.0"/> -->
-<title>Daniels ISO Engine</title>
+<title>axhm3a's ISO Engine</title>
 <style type="text/css">
   body, img { margin-top:0px; margin-left:0px; }
 </style>
@@ -36,6 +36,6 @@
 <tr><td><a href="index.php?x=<?php echo $x;?>&y=<?php echo $y + $jump;?>"><img src="green.png" width="50" height="50"></a></td><td><img src="black.png" width="800" height="50"></td><td><a href="index.php?x=<?php echo $x + $jump; ?>&y=<?php echo $y; ?>"><img src="red.png" width="50" height="50"></a></a></td>
 </table>
 </form>
-<p align="center"><font color="#FFFFFF">&copy; 2010 Daniel Basten</font></p>
+<p align="center"><font color="#FFFFFF">&copy; 2010 - 2012 Daniel Basten</font></p>
 </body>
 </html>
