@@ -12,8 +12,8 @@
 		$offy = 1;
 	}
 	
-	$tilesX = 50;  //16
-	$tilesY = 50;  //21
+	$tilesX = 128;  //16
+	$tilesY = 128;  //21
 	$tileHeight = 30;
 	$tileWidth = 20;
 	$tileHalfWidth = $tileWidth / 2;
