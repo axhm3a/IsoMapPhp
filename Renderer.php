@@ -5,9 +5,14 @@
  */
 class Renderer
 {
+    /**
+     * determines the pixel ratio for height information
+     * @var int
+     */
     private $roughness = 2;
 
     /**
+     * returns arbitrary png data
      * @param int $offsetX
      * @param int $offsetY
      * @return string
