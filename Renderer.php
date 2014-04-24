@@ -5,6 +5,7 @@
  */
 class Renderer
 {
+    private $assetPath = "assets/";
     /**
      * determines the pixel ratio for height information
      * @var int
@@ -31,10 +32,9 @@ class Renderer
         $height = 2 * 5 * $tilesY;
         $mapX = 512;
         $mapY = 512;
-        $assetPath = "WORK/";
         $renderingSurface = imagecreatetruecolor ($width, $height);
-        $heightMap = imagecreatefrompng($assetPath . "heightmap2.png");
-        $objectMap = imagecreatefrompng($assetPath . "objmap.png");
+        $heightMap = imagecreatefrompng($this->assetPath . "heightmap.png");
+        $objectMap = imagecreatefrompng($this->assetPath . "objectmap.png");
 
         for($x = 0; $x < $mapX; $x++){
             for($y = 0; $y < $mapY; $y++){
@@ -53,14 +53,14 @@ class Renderer
         imagealphablending( $renderingSurface, true );
 
         $tile = array();
-        $tile[0] = imagecreatefrompng ( $assetPath . "000.png" );
-        $tile[1] = imagecreatefrompng ( $assetPath . "001.png" );
-        $tile[10] = imagecreatefrompng ( $assetPath . "010.png" );
-        $tile[11] = imagecreatefrompng ( $assetPath . "011.png" );
-        $tile[12] = imagecreatefrompng ( $assetPath . "012.png" );
-        $tile[13] = imagecreatefrompng ( $assetPath . "013.png" );
-        $object[10] = imagecreatefrompng( $assetPath . "obj1.png");
-        $object[50] = imagecreatefrompng( $assetPath . "obj2.png");
+        $tile[0] = imagecreatefrompng ( $this->assetPath . "tiles/000.png" );
+        $tile[1] = imagecreatefrompng ( $this->assetPath . "tiles/001.png" );
+        $tile[10] = imagecreatefrompng ( $this->assetPath . "tiles/010.png" );
+        $tile[11] = imagecreatefrompng ( $this->assetPath . "tiles/011.png" );
+        $tile[12] = imagecreatefrompng ( $this->assetPath . "tiles/012.png" );
+        $tile[13] = imagecreatefrompng ( $this->assetPath . "tiles/013.png" );
+        $object[10] = imagecreatefrompng( $this->assetPath . "objects/obj1.png");
+        $object[50] = imagecreatefrompng( $this->assetPath . "objects/obj2.png");
 
         for ($y = 0; $y < $tilesY; $y++) {
             $renX = ($width / 2) - $tileWidth;
